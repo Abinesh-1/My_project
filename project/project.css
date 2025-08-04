@@ -1,0 +1,276 @@
+body {
+  font-family: 'Product Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.top-nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.top-nav ul li img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.google-logo {
+  font-size: 84px;
+  color: #4285F4;
+  font-weight: bold;
+  margin-top: 120px;
+}
+
+.search-container {
+  position: relative;
+  width: 50%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f4;
+  border-radius: 24px;
+  padding: 10px 20px;
+  gap:10px;
+}
+
+.search-container input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.search-container i {
+  color: #5f6368;
+  font-size: 18px;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.quick-links img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.quick-links img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #70757a;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  gap: 15px;
+  margin: 10px;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #70757a;
+}
+
+#apps-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+#app-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+}
+
+#app-dropdown a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+#app-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.account-panel {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 300px;
+  background-color: #2c2c2c;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+  z-index: 9999;
+  font-family: 'Product Sans', Arial, sans-serif;
+}
+
+.account-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.account-email {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 8px;
+}
+
+.account-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid white;
+}
+
+.account-name {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.manage-btn {
+  background-color: #3c4043;
+  border: none;
+  color: #8ab4f8;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.account-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  background-color: #3c4043;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.account-extra p {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.extra-option {
+  padding: 10px;
+  background-color: #3c4043;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.extra-option:hover,
+.action-btn:hover,
+.manage-btn:hover {
+  background-color: #4d4d4d;
+}
+
+
+.app-launcher-panel {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    z-index: 1000;
+    display: none; 
+}
+
+.app-launcher {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+
+.app-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.app-item:hover {
+    transform: scale(1.08);
+}
+
+.app-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+}
+
+.app-item span {
+    font-size: 0.8rem;
+}
