@@ -34,3 +34,26 @@ appIconBtn.addEventListener('click', function(event) {
         appLauncherPanel.style.display = 'none';
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
